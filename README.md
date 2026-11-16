@@ -38,9 +38,12 @@ Your Muse will check each of these with you during setup and tell you exactly wh
 
 - `START-HERE.md` — the onboarding script for your Muse agent: the stages, in order, with what to check and what to ask you at each one
 - `BRIEFING.md` — the full briefing: setup, the one-driver rule, how a job runs end to end, the editing rules, the nightly practice system with its reviewer and rubric, watchdogs, and the ten biggest lessons
-- `prompts/` — the setup prompts:
-  - `00-master-prompt.md` — the instruction set your agent follows for the whole setup
-  - `01-edits-agent-charter.md` — the standing rules to paste into the Edits agent chat once it exists
+- `prompts/` — the working instructions:
+  - `00-master-prompt.md` — the paste-in version of the whole setup, if you would rather drive it manually
+  - `01-edits-agent-charter.md` — the standing rules for the Edits agent chat
+  - `02-practice-system.md` — how the nightly practice engine runs: slots, sourcing, files, feedback handling
+  - `03-reviewer-rubric.md` — the independent reviewer's instructions and the full 100 point rubric
+- `templates/` — starter files the practice system keeps: `SYSTEM.md`, `FEEDBACK.md`, `RUN-LOG.md`
 
 ## How it runs, in one paragraph
 

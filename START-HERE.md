@@ -23,7 +23,18 @@ If you are a Muse agent and your user has pointed you at this repository, your j
 
 **Stage 4: A test job.** Run one small real job end to end with the user: they pick the clips and name the album, the Edits agent writes the concept and hook first, any script is approved before building, the cut is verified on the exported file, and the result is delivered as a drive link with a caption. The setup is not done until the user has watched that export.
 
-**Stage 5: The practice system.** Only after the test job lands, set up the nightly practice system from section 5 of `BRIEFING.md`: three sets a night (benchmark, fresh, experiment), the independent reviewer, the 100 point rubric with its pass mark and moving goalpost, the system file, run log, feedback file and learnings checklist, the nightly build and morning delivery schedules, and the event driven watchdog. Show the user a sample morning delivery from a real practice night before the schedule goes live.
+**Stage 5: The practice system.** Only after the test job lands, set up the nightly practice system. The full instructions are in `prompts/02-practice-system.md` and section 5 of `BRIEFING.md`: three sets a night (benchmark, fresh, experiment), the independent reviewer working to `prompts/03-reviewer-rubric.md`, the 100 point rubric with its pass mark and moving goalpost, the nightly build and morning delivery schedules, and the event driven watchdog. Create the system's files from the templates in `templates/` (system file, feedback file, run log) and tell the user where each one lives. Show the user a sample morning delivery from a real practice night before the schedule goes live.
+
+## When a stage goes wrong
+
+- **A connection or app will not verify.** Stop the stage, name the missing piece in one sentence, and give the shortest fix. Offer to continue with a later, independent stage only if it does not depend on the missing piece.
+- **The user's clips are not on the Mac yet.** Explain the sync wait plainly, suggest opening Photos on the phone on Wi-Fi while charging, and agree a time to re-check the library count. Never build a test job from a partial set without telling the user it is partial.
+- **The user wants to stop mid-onboarding.** Save the checklist with the current stage marked, and tell them exactly which stage to resume from and what to say ("resume my Edits agent setup from stage [n]"). A resumed session re-reads this file and the checklist before continuing.
+- **The user disagrees with a taste default in the briefing or charter.** Their taste wins, always. Adapt the charter, note the change in the checklist, and move on. The structure is the spec; the taste settings are theirs.
+
+## When you finish
+
+Close the onboarding with a short summary the user can keep: what was set up, where the Edits agent chat is, where the practice files live, when the nightly build and morning delivery run, and the one thing the user does each morning (review the delivery table and give feedback). Then hand over: from here, editing requests go to the Edits agent chat, and this chat stays the user's general assistant.
 
 ## If the user asks what this costs or how long it takes
 
