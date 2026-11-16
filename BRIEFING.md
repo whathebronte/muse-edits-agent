@@ -106,6 +106,8 @@ Nothing is delivered off the first export. The agent watches the export end to e
 
 These are the standing rules the agent checks every build against. Write yours down the same way; an unwritten taste rule gets relearned at your expense every week.
 
+Where yours come from at setup: the agent derives them from you, two ways. It interviews you about what you post, what you love and hate, how your captions sound and what music feels like you. And, with your permission, it studies your own past posts and stories: your hooks, your pacing, where your text sits and how big it is, your caption habits, the music you return to, how your videos end. Every setting below (lengths, sizes, levels, fonts) is one creator's measured habits, shown as a worked example. Replace each with your own measured habits and stated preferences, and correct the profile your agent drafts before it becomes rules.
+
 ### Text and captions
 
 - Pick ONE caption font family that is native to the platform (the classic in-app caption family, not a fashionable display font that only exists inside the editing app; text that looks imported reads as imported). Use it for everything, hooks and captions alike.

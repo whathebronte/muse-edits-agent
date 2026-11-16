@@ -19,11 +19,18 @@ If you are a Muse agent and your user has pointed you at this repository, your j
 
 **Stage 2: Connection test.** Prove you can reach the Edits app on their Mac by listing their Edits projects. Prove the Photos path by finding a clip from the last few days in the library's chronological view (Library, then All Photos), never the search view. Explain the failure modes from the briefing in plain language: Mac showing offline while awake, clips still syncing, originals downloading on demand.
 
-**Stage 3: The Edits agent chat.** Create a separate chat dedicated to editing. Seed it with the charter in `prompts/01-edits-agent-charter.md`, adapted to the user's answers from stages 1 and 2. Confirm its standing instructions include the one-driver rule, the curator rule, concept and hook first, script approval before building, the mandatory second pass on every export, and delivery as drive links with ready-to-post captions.
+**Stage 3: Learn the user's editing style.** Nothing in this repo is one creator's taste imposed on another. The taste settings in the briefing and the charter (lengths, text sizes, levels, fonts, pacing) are a worked example, not defaults. Before any charter is written, build this user's taste profile two ways:
 
-**Stage 4: A test job.** Run one small real job end to end with the user: they pick the clips and name the album, the Edits agent writes the concept and hook first, any script is approved before building, the cut is verified on the exported file, and the result is delivered as a drive link with a caption. The setup is not done until the user has watched that export.
+1. Interview them in short rounds, no more than five questions at a time: what they post, the formats they love and the ones they hate, how their captions and hooks sound, their music taste, what they would never do on screen.
+2. With their permission and their Instagram connected, study their own past posts and stories: the hooks they reach for, their pacing and beat lengths, where their on-screen text sits and how big it is, their caption habits, the music lanes they return to, how their videos end.
 
-**Stage 5: The practice system.** Only after the test job lands, set up the nightly practice system. The full instructions are in `prompts/02-practice-system.md` and section 5 of `BRIEFING.md`: three sets a night (benchmark, fresh, experiment), the independent reviewer working to `prompts/03-reviewer-rubric.md`, the 100 point rubric with its pass mark and moving goalpost, the nightly build and morning delivery schedules, and the event driven watchdog. Create the system's files from the templates in `templates/` (system file, feedback file, run log) and tell the user where each one lives. Show the user a sample morning delivery from a real practice night before the schedule goes live.
+Write the taste profile down, show it to the user, and let them correct it. Where their archive and their answers disagree, ask. This profile, not the example settings, is what the charter gets seeded with, and it becomes the benchmark the practice system recreates.
+
+**Stage 4: The Edits agent chat.** Create a separate chat dedicated to editing. Seed it with the charter in `prompts/01-edits-agent-charter.md`, adapted to the user's taste profile from stage 3 and their setup answers from stages 1 and 2. Confirm its standing instructions include the one-driver rule, the curator rule, concept and hook first, script approval before building, the mandatory second pass on every export, and delivery as drive links with ready-to-post captions.
+
+**Stage 5: A test job.** Run one small real job end to end with the user: they pick the clips and name the album, the Edits agent writes the concept and hook first, any script is approved before building, the cut is verified on the exported file, and the result is delivered as a drive link with a caption. The setup is not done until the user has watched that export.
+
+**Stage 6: The practice system.** Only after the test job lands, set up the nightly practice system. The full instructions are in `prompts/02-practice-system.md` and section 5 of `BRIEFING.md`: three sets a night (benchmark, fresh, experiment), the independent reviewer working to `prompts/03-reviewer-rubric.md`, the 100 point rubric with its pass mark and moving goalpost, the nightly build and morning delivery schedules, and the event driven watchdog. Create the system's files from the templates in `templates/` (system file, feedback file, run log) and tell the user where each one lives. Show the user a sample morning delivery from a real practice night before the schedule goes live.
 
 ## When a stage goes wrong
 
@@ -38,4 +45,4 @@ Close the onboarding with a short summary the user can keep: what was set up, wh
 
 ## If the user asks what this costs or how long it takes
 
-Be honest and plain: stages 1 to 4 fit in one sitting of about an hour, most of it waiting on installs and sync. Stage 5 is a second, shorter sitting. The nightly practice uses real plan allowance, which is why the briefing recommends a paid plan and weekday scheduling.
+Be honest and plain: stages 1 to 5 fit in one sitting of about an hour, most of it waiting on installs and sync (the stage 3 style study can run while clips sync). Stage 6 is a second, shorter sitting. The nightly practice uses real plan allowance, which is why the briefing recommends a paid plan and weekday scheduling.
