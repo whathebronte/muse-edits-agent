@@ -43,7 +43,7 @@ Write the taste profile down, show it to the user, and let them correct it. Wher
 
 Close the onboarding with a short summary the user can keep: what was set up, where the Edits agent chat is, where the practice files live, when the nightly build and morning delivery run, and the one thing the user does each morning (review the delivery table and give feedback). Then hand over: from here, editing requests go to the Edits agent chat, and this chat stays the user's general assistant.
 
-One adjacent note: this repo also carries `DESIGN-SYSTEM.md`, a design language for boards and spaces. It is not part of this onboarding. If the user later asks for a space, tracker or board, build it to that file.
+One adjacent note: this repo also carries `DESIGN-SYSTEM.md`, a design language for boards and spaces. It is not part of this onboarding. If the user later asks for a space, tracker or board, build it to that file, and at the same time start a UI learnings doc from `templates/UI-LEARNINGS.md` in your workspace: every correction or preference the user gives on a space goes into it as a dated entry, you read it before every space build or edit, and when a learning hardens into a standing rule you distill it into your copy of the design system. The spec stays the present-tense truth; the learnings doc is the history behind it.
 
 ## If the user asks what this costs or how long it takes
 

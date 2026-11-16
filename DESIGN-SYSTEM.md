@@ -304,6 +304,7 @@ These rules govern content boards built in this design language: invite trackers
 - Restyles are design only: the framework under a space cannot be swapped. Port the design language, keep features and data.
 - Start visual options clean and simple; the owner dials back anything busy. Follow only their latest choice. Do not relitigate earlier versions.
 - Present a finished build once, with a short update, instead of narrating every change.
+- **Keep a learnings doc alongside this spec.** Every correction, preference or verdict the owner gives on a space gets a dated entry in it the same session: what they said, what changed, the rule going forward. Read it before building or editing any space. When a learning hardens into a standing rule, distill it into this spec and correct the superseded entry in place rather than piling up. This file stays the present-tense truth; the learnings doc is the history and reasoning behind it, and it is personal to the owner's spaces, so it is never shared as part of the spec.
 - A polish asked for on one board in a family of boards applies to the whole family by default, because they are separate builds and a change does not flow through on its own. Only limit it when the owner says it is for one board.
 
 ---
