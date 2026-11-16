@@ -1,0 +1,30 @@
+# Start here: instructions for the Muse agent reading this repo
+
+If you are a Muse agent and your user has pointed you at this repository, your job is to run an onboarding: set up an Edits agent for them, stage by stage, guiding them through it. The user does not need to read this repo themselves. You read it, and you lead.
+
+## How to run this onboarding
+
+- Start by greeting the user in plain language: explain in two or three sentences what you are about to set up (a video editing agent that cuts reels and stories in the Edits app on their Mac, learns from a nightly practice system, and delivers finished work for their approval), and that you will work in stages, asking them only for the things only a human can do: installing apps, signing in, approving, choosing.
+- Work one stage at a time, in the order below. At the start of each stage, say what the stage is, what you will do, and what you need from them. At the end of each stage, prove it worked with something they can see, and ask them to confirm before moving on.
+- Never post, send, book, pay or delete anything without showing the user the exact final version and getting their yes.
+- Never spend voice credits before the user approves the script.
+- Keep a running checklist in the chat and update it as stages complete.
+- If something is missing (an app, a connection, a login), stop, name exactly what is missing, and give the shortest fix. Do not work around it silently.
+- Ask clarifying questions when a choice affects their daily life. For straightforward steps, just proceed.
+- Do not use em dashes in anything you write for the user.
+
+## The stages
+
+**Stage 1: Prerequisites.** Read section 1 of `BRIEFING.md`. Check with the user, one by one: a Mac that can stay awake and plugged in during editing sessions, the Muse desktop app on that Mac paired and left running, the Meta Edits app installed and signed in, iCloud Photos syncing from their phone to the Mac on the same Apple account, a cloud drive folder for finished exports, and a paid Muse plan that can carry nightly work. Optional: a voice cloning account. Do not move on until each item is confirmed working or the user tells you to continue without it.
+
+**Stage 2: Connection test.** Prove you can reach the Edits app on their Mac by listing their Edits projects. Prove the Photos path by finding a clip from the last few days in the library's chronological view (Library, then All Photos), never the search view. Explain the failure modes from the briefing in plain language: Mac showing offline while awake, clips still syncing, originals downloading on demand.
+
+**Stage 3: The Edits agent chat.** Create a separate chat dedicated to editing. Seed it with the charter in `prompts/01-edits-agent-charter.md`, adapted to the user's answers from stages 1 and 2. Confirm its standing instructions include the one-driver rule, the curator rule, concept and hook first, script approval before building, the mandatory second pass on every export, and delivery as drive links with ready-to-post captions.
+
+**Stage 4: A test job.** Run one small real job end to end with the user: they pick the clips and name the album, the Edits agent writes the concept and hook first, any script is approved before building, the cut is verified on the exported file, and the result is delivered as a drive link with a caption. The setup is not done until the user has watched that export.
+
+**Stage 5: The practice system.** Only after the test job lands, set up the nightly practice system from section 5 of `BRIEFING.md`: three sets a night (benchmark, fresh, experiment), the independent reviewer, the 100 point rubric with its pass mark and moving goalpost, the system file, run log, feedback file and learnings checklist, the nightly build and morning delivery schedules, and the event driven watchdog. Show the user a sample morning delivery from a real practice night before the schedule goes live.
+
+## If the user asks what this costs or how long it takes
+
+Be honest and plain: stages 1 to 4 fit in one sitting of about an hour, most of it waiting on installs and sync. Stage 5 is a second, shorter sitting. The nightly practice uses real plan allowance, which is why the briefing recommends a paid plan and weekday scheduling.

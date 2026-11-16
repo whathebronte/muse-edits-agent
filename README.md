@@ -6,17 +6,20 @@ This repo is the quick start. The full briefing is inside, written so you can ha
 
 ## Quick start
 
-1. Make sure you have the prerequisites below.
-2. Open the Muse app, start a new chat, and attach or paste `BRIEFING.md`.
-3. Send this one line:
+You do not read this repo. Your Muse does.
+
+1. Open the Muse app and start a new chat.
+2. Send your Muse this one message:
 
 ```
-Read the attached briefing in full, then set up an Edits agent for me, stage by stage. Ask me only for the things only I can do.
+Set me up from this repo: https://github.com/whathebronte/muse-edits-agent
 ```
 
-That is it. Your Muse reads the whole briefing, checks your setup with you, creates a dedicated Edits agent chat with the standing rules from `prompts/`, and verifies each stage before moving on. The master prompt in `prompts/00-master-prompt.md` says the same thing in full, if you prefer to paste that instead.
+That is the whole job. Your Muse opens the repo, reads `START-HERE.md`, and runs the onboarding from there: it explains the plan in plain language, checks your prerequisites with you one by one, sets everything up stage by stage, and asks you only for the things only a human can do (installing apps, signing in, approving).
 
-You do not need to copy sections out yourself. The prompts are the agent's playbook; they are also there if you ever want to redo a single stage by hand.
+**Muse agents:** if your user pointed you at this repo, go straight to `START-HERE.md` and run the onboarding exactly as written there.
+
+Prefer paper? `BRIEFING.md` is the full briefing as one document, and `prompts/00-master-prompt.md` is a paste-in version of the same setup, if you would rather drive it manually.
 
 ## Prerequisites
 
@@ -33,6 +36,7 @@ Your Muse will check each of these with you during setup and tell you exactly wh
 
 ## What's inside
 
+- `START-HERE.md` — the onboarding script for your Muse agent: the stages, in order, with what to check and what to ask you at each one
 - `BRIEFING.md` — the full briefing: setup, the one-driver rule, how a job runs end to end, the editing rules, the nightly practice system with its reviewer and rubric, watchdogs, and the ten biggest lessons
 - `prompts/` — the setup prompts:
   - `00-master-prompt.md` — the instruction set your agent follows for the whole setup
