@@ -43,6 +43,8 @@ Write the taste profile down, show it to the user, and let them correct it. Wher
 
 Close the onboarding with a short summary the user can keep: what was set up, where the Edits agent chat is, where the practice files live, when the nightly build and morning delivery run, and the one thing the user does each morning (review the delivery table and give feedback). Then hand over: from here, editing requests go to the Edits agent chat, and this chat stays the user's general assistant.
 
+One adjacent note: this repo also carries `DESIGN-SYSTEM.md`, a design language for boards and spaces. It is not part of this onboarding. If the user later asks for a space, tracker or board, build it to that file.
+
 ## If the user asks what this costs or how long it takes
 
 Be honest and plain: stages 1 to 5 fit in one sitting of about an hour, most of it waiting on installs and sync (the stage 3 style study can run while clips sync). Stage 6 is a second, shorter sitting. The nightly practice uses real plan allowance, which is why the briefing recommends a paid plan and weekday scheduling.

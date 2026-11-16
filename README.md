@@ -44,6 +44,7 @@ Your Muse will check each of these with you during setup and tell you exactly wh
   - `02-practice-system.md` — how the nightly practice engine runs: slots, sourcing, files, feedback handling
   - `03-reviewer-rubric.md` — the independent reviewer's instructions and the full 100 point rubric
 - `templates/` — starter files the practice system keeps: `SYSTEM.md`, `FEEDBACK.md`, `RUN-LOG.md`
+- `DESIGN-SYSTEM.md` — a complete design language for boards and spaces (trackers, pipelines, lists): colour tokens with one colour per status, typography, components, card and declutter rules, finish details, and the phone-width verification discipline. Optional, and independent of the Edits agent: hand it to your Muse whenever you want a space built, and it will build to this language
 
 ## How it runs, in one paragraph
 
