@@ -45,6 +45,7 @@ Your Muse will check each of these with you during setup and tell you exactly wh
   - `03-reviewer-rubric.md` — the independent reviewer's instructions and the full 100 point rubric
 - `templates/` — starter files the practice system keeps: `SYSTEM.md`, `FEEDBACK.md`, `RUN-LOG.md`
 - `DESIGN-SYSTEM.md` — a complete design language for boards and spaces (trackers, pipelines, lists): colour tokens with one colour per status, typography, components, card and declutter rules, finish details, and the phone-width verification discipline. Optional, and independent of the Edits agent: hand it to your Muse whenever you want a space built, and it will build to this language. It also instructs the agent to keep a UI learnings doc (starter in `templates/UI-LEARNINGS.md`) where your feedback on spaces accumulates, so the design rules sharpen the way you actually like things
+- `spaces/` — recreatable templates for two specific spaces, structure and behaviour included, all personal data removed: an Invites tracker (invitations, RSVPs, clashes) and a Brand Collabs tracker (pitches, live campaigns, invoices). `prompts/04-spaces-build.md` is the prompt that builds both
 
 ## How it runs, in one paragraph
 
