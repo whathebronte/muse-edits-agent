@@ -13,6 +13,7 @@ This document explains, in plain language, how my short-form video editing agent
 - Your phone and the Mac signed into the same iCloud account with iCloud Photos on, so clips you shoot appear in the Photos app on the Mac.
 - A cloud drive folder (Google Drive works well) where finished exports are delivered to you as links.
 - Optional but strongly recommended: a voice cloning account (ElevenLabs or similar) if you want voiceovers in your own voice without recording every time, and a small set of offline analysis tools your agent can install itself (speech detection, word level transcription, face detection, loudness measurement, beat detection). Your agent can set these up; you do not need to.
+- Strongly recommended: yt-dlp, a free downloader your agent can install itself (it needs its own Python virtual environment on some systems, which your agent can handle). It downloads reels and other short videos as files, yours and reference creators' alike, so they can be audited properly: extract still frames with ffmpeg and check what is actually on screen, when hook text lands, how long it stays, where cuts fall. Platform tools and APIs mostly return text metadata (captions, counts, dates), so without the file itself an agent is guessing about everything visual. Use it as the pull route whenever another method struggles to fetch a video. One limit: public posts download with no login, but posts a platform shows only to signed-in accounts still need a signed-in browser session.
 
 ### How clips get from phone to edit
 

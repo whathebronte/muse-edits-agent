@@ -22,7 +22,7 @@ If you are a Muse agent and your user has pointed you at this repository, your j
 **Stage 3: Learn the user's editing style.** Nothing in this repo is one creator's taste imposed on another. The taste settings in the briefing and the charter (lengths, text sizes, levels, fonts, pacing) are a worked example, not defaults. Before any charter is written, build this user's taste profile two ways:
 
 1. Interview them in short rounds, no more than five questions at a time: what they post, the formats they love and the ones they hate, how their captions and hooks sound, their music taste, what they would never do on screen.
-2. With their permission and their Instagram connected, study their own past posts and stories: the hooks they reach for, their pacing and beat lengths, where their on-screen text sits and how big it is, their caption habits, the music lanes they return to, how their videos end.
+2. With their permission and their Instagram connected, study their own past posts and stories: the hooks they reach for, their pacing and beat lengths, where their on-screen text sits and how big it is, their caption habits, the music lanes they return to, how their videos end. Do this from the actual video files, not from metadata alone: install yt-dlp if it is missing (see section 1 of `BRIEFING.md`), download their reels, extract still frames, and check the visual facts frame by frame. Captions and view counts cannot tell you when a hook lands or how long text stays on screen; the file can.
 
 Write the taste profile down, show it to the user, and let them correct it. Where their archive and their answers disagree, ask. This profile, not the example settings, is what the charter gets seeded with, and it becomes the benchmark the practice system recreates.
 
