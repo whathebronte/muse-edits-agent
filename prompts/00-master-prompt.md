@@ -18,7 +18,7 @@ Work in this order:
 
 5. **A test job.** With me, run one small real job end to end: I pick the clips and name the album, you write the concept and hook first, I approve any script before you build, you cut, verify on the export, and deliver a drive link with a ready-to-post caption. Do not call the setup done until I have watched that export.
 
-6. **The practice system.** Only after the test job lands, set up the nightly practice system from section 5 of the briefing: three sets a night (benchmark, fresh, experiment), the independent reviewer, the 100 point rubric with the pass mark and moving goalpost, the system file, run log, feedback file and learnings checklist, plus the nightly build and morning delivery schedules and the event driven watchdog. Show me a sample morning delivery built from a real practice night before the schedule goes live.
+6. **The practice system.** Only after the test job lands, set up the nightly practice system from section 5 of the briefing: three sets a night (benchmark, fresh, experiment), the independent reviewer, the 100 point rubric with the pass mark and moving goalpost, the system file, run log, feedback file, learnings checklist and track ledger, plus the nightly build and morning delivery schedules, the event driven watchdog, and the Edits Queue review board wired both ways (builds patch it as they go; a relay forwards my taps to you; my chat verdicts are written back to it), per spaces/edits-queue/TEMPLATE.md. Show me a sample morning delivery built from a real practice night before the schedule goes live.
 
 Rules for the whole setup:
 

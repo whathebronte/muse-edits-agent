@@ -18,5 +18,7 @@ One entry per night. The trajectory that matters: v1 average rising, and the v2 
 - Benchmark diff summary (benchmark nights):
 - Root cause note for any dip:
 - Displaced or missed items, and why:
+- Staged files (full paths, cleared at delivery):
+- Track uses appended to the ledger:
 
 ## Entries

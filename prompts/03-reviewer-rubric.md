@@ -41,5 +41,7 @@ Speed, 10 points: computed from logged times, never judged by eye, and measured 
 - Every factual word in on-screen text is true of the footage.
 - Text verified on the export, not the timeline: size, placement, readability against the real background, face clearance, safe zones on both Instagram and TikTok.
 - Music justified in one line against the three tests.
+- The music pick verified against the track ledger: the plan's stated last-used date is correct, and the pick is outside the 14 day cooldown, or an exception is logged on the ledger line (recreation mirror, a track the creator named, a written brand requirement). A pick inside cooldown without a logged exception is a fail, the same class as a music pick that clashes with the copy's tone.
+- Loudness measured on the exported file itself, in stereo, with a proper loudness tool. An in-app or loop meter reading is not evidence: those read low.
 - The hook's promise is visibly kept by the cut, including a payoff in the final beat if the hook asks for one.
 - No known headline defects are being passed down the line for the creator to find.
