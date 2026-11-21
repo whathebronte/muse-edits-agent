@@ -36,6 +36,8 @@ Each delivered piece is one card:
 
 **Ordering is deterministic, not insertion order.** Ready for review and Changes requested sort the same way: newest day or night group first, then set order (Set 1, Set 2, Set 3), and Reel before Story within a set. Passed and Did not pass sort newest first. The creator should always find last night's Set 1 Reel in the same place, however the builds happened to finish.
 
+**Titles follow a fixed pattern, with no em dashes or en dashes, ever** (the creator bans them in all copy): a colon after the job or set name (Event: Reel, Event: Story, Brand: Story) or, for practice sets, the comma pattern (Night 5, Set 1 Reel). The same rule covers job names. If a title lands wrong, fix it with the rename action rather than deleting and re-adding the item, so its verdict history and feedback survive.
+
 ## Data model
 
 One record per job:
@@ -70,6 +72,8 @@ The agent drives the space through published actions; the creator only taps. Bui
 - `getworkitems` — all work items grouped by status, in the deterministic order above
 - `submitverdict` — record a verdict (approve, changes, fail) with an optional feedback note; moves the item
 - `savefeedback` — save or replace a feedback note without changing status
+- `redeliverworkitem` — return a Changes requested item to Ready for review after a fix pass lands, updating its version (and its drive link when given); refuses items that are not in Changes requested
+- `renameworkitem` — update an item's title only, preserving its status, version, link, score and feedback
 
 ## The wiring, direction one: the board is the live picture
 
@@ -82,6 +86,8 @@ The agent drives the space through published actions; the creator only taps. Bui
 - The job is fully done with both marks set: clear it.
 
 Two safeguards: never add a work item that is already on the board (match on title and group label; add only what is genuinely missing), and a failed board action is logged and never holds the build or the delivery hostage. The board serves the work, not the other way round.
+
+**Redelivery: fix passes come back the moment they land.** When a fix pass on a Changes requested item is delivered (its drive file updated in place and renamed to the true version), the agent returns the item to Ready for review in the same flow, using the redeliver action with the new version and the drive link if it changed. A fixed item must never be left sitting in Changes requested after its fix has landed: downstream surfaces that read the board would keep reporting the old state, and the creator would reasonably conclude the fix never happened. The redeliver action refuses items that are not in Changes requested, so it cannot be used to resurrect passed or failed items.
 
 **The relay: board taps reach the agent by polling.** The creator acts on the board by tapping: starting a job, submitting a verdict, leaving a feedback note, flipping the progress marks. Those taps have to reach the editing agent promptly, as instructions: a started job is a content request to pick up, a verdict is a ruling, a feedback note is a note on that item. Be honest about the mechanism: a tap inside a space fires no webhook and no event an agent can subscribe to, so a small scheduled relay polls the board instead. It works like this:
 
@@ -110,6 +116,7 @@ The practice system's morning delivery does not ask the creator to re-review wha
 - **A verdict keeps its note.** The feedback travels with the item across every section, so the reason is never separated from the ruling.
 - **No duplicates.** Builds match on title and group label before adding; the board never shows the same piece twice.
 - **The board never blocks the work.** A failed action is logged in the run record and the build or delivery continues.
+- **Titles carry no long dashes.** Em dashes and en dashes never appear in item titles or job names; the colon and comma patterns above are the whole vocabulary.
 - **The relay only advances on success.** State is rewritten after a delivered message, never before.
 
 ## Setup parameters (your agent asks you)

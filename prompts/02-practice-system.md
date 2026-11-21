@@ -20,6 +20,8 @@ Each set is one reel plus one story, distinct from the others.
 
 Voiceover discipline: only one of the three reels carries a voiceover. The other two are text hook montages.
 
+Story effort bar: a practice story that is one clip plus a music track is not a deliverable, however nice the clip and the song. It adds nothing the creator could not do themselves in seconds, and it fails on effort. Practice stories need visible editorial work: a cut structure, a deliberate choice, something made. (The creator's own posted stories are often single takes; that restraint is their style. The bar applies to practice output, where the point is the agent learning to edit.)
+
 ## Sourcing
 
 - Practice may scout the camera roll and albums freely: unused and unposted footage first, reuse allowed and logged.
@@ -50,6 +52,16 @@ Create these from the templates in `templates/` at setup, and treat each as the 
 6. Export and second pass on the export itself.
 7. Only v2 is presented in the morning delivery, with its score, a ready-to-post caption, and at most one or two specific asks for the creator.
 
+## Speed gates and queue discipline
+
+Speed is earned by removing waits and rework, never by skipping the second pass or the review loop. Four gates, learned from where the hours actually went:
+
+- **Ingest gate.** A job may not claim the editing app until every source clip on its plan is verified present as a local file on the Mac, staged in the workspace, not merely visible in the photo library. Sync waits happen while the job waits in the queue, never inside a build; if a job's media is not fully local, the next ready job takes the app and the gated job is re-checked at each checkpoint.
+- **Plan completeness gate.** The written plan is finished before the app opens: clips with ranges, trims, hook and caption copy, music pick with its catalog id resolved and its track ledger check done, and the export list. A catalog collision, an unresolved id or an unledgible track discovered mid build is logged as a plan defect, because the plan was not complete.
+- **Checkpoint budget and preemption.** Every job checkpoints at least per finished piece. A job that cannot progress (blocked on sync, the app, or media) parks at its checkpoint and yields the app to the next queued job instead of holding it; a fix pass on an already delivered item preempts a long first build when the creator is waiting on the fix. The watchdog's stall nudge is the backstop, not the mechanism.
+- **One meter, one pre-flight.** One loudness tool is the only meter whose figures may be logged or scored, for builder and reviewer alike; a figure from any other meter is not the export's loudness. Before any voice generation or build, the pre-flight is checked in writing: the locked voice settings row (including speaker boost on, where the clone uses it), the export preset, the standing text size, music from frame 0. A generation discarded because a checklist item was skipped is logged as a process defect.
+- **Clock discipline.** Phase clocks are logged live per video at each checkpoint, from file timestamps, never reconstructed at close. Every run log closes with a compact speed block: intake minutes, scout and transfer minutes, plan minutes, v1 minutes per video, review and v2 minutes, total wall clock, re-render count, discarded generation count, and gate incidents (ingest wait inside a build, plan defect found mid-build, meter rework, checklist-caused discard), each as a plain number. A run without the block counts as unmeasured, and that is reported as such.
+
 ## The review board
 
 Finished work is reviewed on the Edits Queue space (build spec: `spaces/edits-queue/TEMPLATE.md`). The wiring matters more than the board itself:
@@ -58,6 +70,7 @@ Finished work is reviewed on the Edits Queue space (build spec: `spaces/edits-qu
 - **The relay brings the creator's taps to you.** It polls the board on its interval and forwards job starts, verdicts, feedback notes and progress marks to your chat. Treat a started job as a content request to pick up, and a verdict or note as the creator's ruling on that item: log it, never re-ask it.
 - **Chat verdicts go back to the board.** When the creator rules on an item in chat, submit the verdict to the board in the same flow, with their notes condensed to the actionable points as the feedback; a note without a verdict is saved as feedback, status untouched. Immediately after, sync the relay state file for exactly the items written, from a fresh board read, so the relay does not echo your own write-back as a fresh tap.
 - **The morning delivery reads the board first.** Anything already ruled on, in the space or in chat, is logged and dropped from the delivery. The delivery itself is a short pointer: night ready, items waiting in Ready for review, one line per set, blockers, at most one or two asks.
+- **Fix passes come back to the board.** When a fix on a Changes requested item is delivered, return the item to Ready for review in the same flow as the drive update, using the board's redeliver action with the new version (and the drive link if it changed). A fixed item must never be left sitting in Changes requested after its fix has landed: downstream surfaces read the board and would keep reporting the old state. Board titles never contain an em dash or an en dash; use the colon pattern (Job: Reel) or the practice comma pattern (Night 5, Set 1 Reel), and fix a wrong title with the board's rename action, which changes the title only and preserves everything else.
 
 ## Staging and disk
 
@@ -76,3 +89,5 @@ Finished work is reviewed on the Edits Queue space (build spec: `spaces/edits-qu
 ## Failure honesty
 
 If a night fails (Mac asleep, app closed, sync incomplete), the morning delivery says plainly what was missed and why. No invented output, no padded sets, no silent skips.
+
+**Transient retry.** On a transient failure mid build (a photo library window lost, a device hiccup, an app action failing, a connector 401 or 5xx, a timeout), retry the failed step once after a short wait before parking anything, re-reading state before repeating any step that writes or sends. A second failure parks that set, not the whole night: checkpoint it, log the failure class, and build the rest. A 429 or rate limit stop is never retried. Log every retry in the run log, so the morning delivery can report attempts, not just outcomes.

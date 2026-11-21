@@ -18,6 +18,8 @@ One entry per night. The trajectory that matters: v1 average rising, and the v2 
 - Benchmark diff summary (benchmark nights):
 - Root cause note for any dip:
 - Displaced or missed items, and why:
+- Retries and failure classes (transient failures retried once; a second failure parks that set, not the night):
+- Speed block (a run without it counts as unmeasured): intake minutes; scout and transfer minutes; plan minutes; v1 minutes per video; review and v2 minutes; total wall clock; re-render count; discarded generation count; gate incidents (ingest wait inside a build, plan defect found mid-build, meter rework, checklist-caused discard), each as a plain number
 - Staged files (full paths, cleared at delivery):
 - Track uses appended to the ledger:
 

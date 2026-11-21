@@ -44,4 +44,8 @@ Speed, 10 points: computed from logged times, never judged by eye, and measured 
 - The music pick verified against the track ledger: the plan's stated last-used date is correct, and the pick is outside the 14 day cooldown, or an exception is logged on the ledger line (recreation mirror, a track the creator named, a written brand requirement). A pick inside cooldown without a logged exception is a fail, the same class as a music pick that clashes with the copy's tone.
 - Loudness measured on the exported file itself, in stereo, with a proper loudness tool. An in-app or loop meter reading is not evidence: those read low.
 - The hook's promise is visibly kept by the cut, including a payoff in the final beat if the hook asks for one.
+- The hook sits in one place for the whole reel, in a single position that works against the hardest frame in the cut. A hook split across two positions, or moved per beat, is a catch.
+- Text treatment matches the reel's energy: a typing animation or typing sound effect on a relaxed, chill reel is a defect. On those reels the line should sit static from the first frame for the whole reel.
+- Lines are level where the footage has lines to check: on any beat built on signage, architecture, product tables or horizons, the dominant edges were measured on the export and sit within about 0.2 degrees of level. A second pass that called a tilted beat level by eye, without measuring, is itself a catch.
+- Story effort: a story that is a single clip plus a music track, with no visible editorial work (no cut structure, no deliberate choice), fails on effort however clean it looks.
 - No known headline defects are being passed down the line for the creator to find.

@@ -56,4 +56,6 @@ Voiceover: one of the three reels only.
 
 - Space: [name and slug, e.g. Edits Queue]
 - Wiring: builds patch the board as events happen (job start, export done, second pass done, each finished piece into Ready for review, job cleared); a relay polls the board and forwards taps to the agent's chat; verdicts and feedback given in chat are written back to the board in the same flow, with the relay state file synced for exactly the items written so the write-back is not echoed as a fresh tap
+- Redelivery: a delivered fix pass returns its item to Ready for review in the same flow as the drive update (the board's redeliver action, with the new version and the drive link if it changed); a fixed item never sits in Changes requested after its fix has landed
+- Titles: work item titles and job names never contain an em dash or an en dash; use the colon pattern (Job: Reel) or the practice comma pattern (Night 5, Set 1 Reel); a wrong title is fixed with the board's rename action, never by deleting and re-adding
 - Review ordering: Ready for review and Changes requested sort newest night group first, then Set 1 to Set 3, Reel before Story; Passed and Did not pass sort newest first
